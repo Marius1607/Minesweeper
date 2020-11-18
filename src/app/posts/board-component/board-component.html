@@ -1,0 +1,11 @@
+<button (click) = 'populateTable()'>Generate Game Board</button>
+<table>
+  <ng-container *ngFor="let list of itemList">
+  <tr>
+    <ng-container *ngFor="let item of list">
+      <td *ngIf="item != 0">{{item}}</td>
+    </ng-container>
+  </tr>
+</ng-container>
+</table>
+
